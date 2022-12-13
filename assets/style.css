@@ -1,3 +1,6 @@
+:root {
+    background-color: rgb(84, 112, 84);
+}
 * {
     box-sizing: border-box;
 }
@@ -15,34 +18,81 @@ header {
     text-align: end;
     background-color: rgb(30, 80, 50);
     color: rgb(84, 112, 84);
+    
 }
-.alias {
-    height: 300;
+
+header nav ul li {
+    display: inline-block;
+    font-size: 32px;
+    
+}
+
+a {
+    color: rgb(84, 112, 84);
+    text-decoration: none;
+    
+}
+
+.avatar {
+    height: 500px;
     width: 100%;
     background-image: url(./images/DALL·E.png);
     background-size: cover;
     background-position: center;
+    margin-left: auto;
+    border-style: inset;
+    border-color:  rgb(93, 139, 93)  rgb(24, 65, 40) rgb(30, 80, 50) rgb(91, 173, 122) ;
+    border-width: 1em;
+    border-radius: 1em;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
+    margin: 20;
+    
     
 }
 
 .projects {
     flex: 2;
-    background-color: rgb(255, 236, 213);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    /* height: 400px;
+    width: 400px; */
+    
 }
 
 .cards {
-    border-style: ridge;
-    border-width:3px;
+    align-items: center;
+    /* border-style: solid; */
+    /* border-color: rgb(30, 80, 50); */
+    border-width: 5px;
     padding: 10px;
-    flex: 0 0 400px;
+    max-height: 500px;
+    width: 48%;
+    margin: 10px;
+    margin-bottom:25px;
+    background-color: rgb(238, 230, 209);
+    border-style: inset;
+    border-color:  rgb(93, 139, 93)  rgb(24, 65, 40) rgb(30, 80, 50) rgb(91, 173, 122) ;
+    border-width: 1em;
+    border-radius: 1em;
+    
     
 }
+
+.cards img {
+    max-height: 350px;
+    max-width: 350px;
+   
+}
+
+/* #card1 {
+    background-image: url(./images/digital-marketing-meeting.jpg);
+    align-items:center;
+    object-fit: contain;
+} */
+
