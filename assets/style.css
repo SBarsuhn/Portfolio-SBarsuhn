@@ -10,7 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 300px;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    
 }
 
 header {
@@ -29,7 +30,7 @@ header nav ul li {
 
 a {
     color: rgb(84, 112, 84);
-    text-decoration: none;
+    text-decoration:none;
     
 }
 
@@ -44,15 +45,22 @@ a {
     border-color:  rgb(93, 139, 93)  rgb(24, 65, 40) rgb(30, 80, 50) rgb(91, 173, 122) ;
     border-width: 1em;
     border-radius: 1em;
+    /* transition: 0.3s ease; */
 }
 
-main {
+/* .avatar:hover {
+    opacity: 0;
+    
+} */
+
+/* main {
     display: flex;
     flex-wrap: wrap;
     margin: 20;
+    align-items: center;
+    object-fit: fill;
     
-    
-}
+} */
 
 .projects {
     flex: 2;
@@ -60,9 +68,14 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-   
+    
     
 }
+
+p {
+    float: right;
+}
+
 
 .cards {
     align-items: center;
@@ -77,17 +90,46 @@ main {
     border-color:  rgb(93, 139, 93)  rgb(24, 65, 40) rgb(30, 80, 50) rgb(91, 173, 122) ;
     border-width: 1em;
     border-radius: 1em;
-    
-    
+    transition:  .3s ease;
+   
+}
+
+.cards:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }
 
 .cards img {
     max-height: 450px;
     max-width: 450px;
+    float: left;
     
-   
+    
+    
 }
 
+
 #card1 {
+    
+ 
+}
+
+@media screen and (max-width: 1016px) {
+    header {
+        padding: 30px;
+    }
+
+    .avatar{
+        height: 200px;
+    }
+
+    .cards {
+        width:98%;
+    }
+    .cards img {
+        max-height: 200px;
+        max-width: 200px;
+    }
     
 }
