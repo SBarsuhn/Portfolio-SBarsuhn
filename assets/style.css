@@ -60,15 +60,12 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* height: 400px;
-    width: 400px; */
+   
     
 }
 
 .cards {
     align-items: center;
-    /* border-style: solid; */
-    /* border-color: rgb(30, 80, 50); */
     border-width: 5px;
     padding: 10px;
     max-height: 500px;
@@ -85,14 +82,12 @@ main {
 }
 
 .cards img {
-    max-height: 350px;
-    max-width: 350px;
+    max-height: 450px;
+    max-width: 450px;
+    
    
 }
 
-/* #card1 {
-    background-image: url(./images/digital-marketing-meeting.jpg);
-    align-items:center;
-    object-fit: contain;
-} */
-
+#card1 {
+    
+}
