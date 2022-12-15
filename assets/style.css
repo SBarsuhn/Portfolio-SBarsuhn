@@ -25,14 +25,25 @@ header {
 header nav ul li {
     display: inline-block;
     font-size: 32px;
+    margin-left: 20px;
+    transition: 0.3s ease;
     
 }
+
+header nav ul li:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+} 
+
+
 
 a {
     color: rgb(84, 112, 84);
     text-decoration:none;
     
 }
+
 
 .avatar {
     height: 500px;
@@ -45,22 +56,24 @@ a {
     border-color:  rgb(93, 139, 93)  rgb(24, 65, 40) rgb(30, 80, 50) rgb(91, 173, 122) ;
     border-width: 1em;
     border-radius: 1em;
-    /* transition: 0.3s ease; */
 }
 
-/* .avatar:hover {
-    opacity: 0;
-    
-} */
+.aboutme {
+    font-size: larger;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: px;
+    margin:20px;
+    line-height: 1.5em;
+    background-color: rgb(238, 230, 209);
+    border-style: inset;
+    border-color:  rgb(93, 139, 93)  rgb(24, 65, 40) rgb(30, 80, 50) rgb(91, 173, 122) ;
+    border-width: 10px;
+    border-radius: 1em;
+    color:rgb(30, 80, 50)
+}
 
-/* main {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20;
-    align-items: center;
-    object-fit: fill;
-    
-} */
 
 .projects {
     flex: 2;
@@ -69,17 +82,12 @@ a {
     justify-content: space-evenly;
     align-items: center;
     
-    
-}
-
-p {
-    float: right;
 }
 
 
 .cards {
     align-items: center;
-    border-width: 5px;
+    border-width: 1px;
     padding: 10px;
     max-height: 500px;
     width: 48%;
@@ -91,13 +99,20 @@ p {
     border-width: 1em;
     border-radius: 1em;
     transition:  .3s ease;
-   
+}
+
+.pdesc {
+    font-size: 18px;
+    line-height: 125%;
+    margin: 15px;
+    padding: 25px;
+
 }
 
 .cards:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
 }
 
 .cards img {
@@ -109,15 +124,35 @@ p {
     
 }
 
-
-#card1 {
-    
- 
+footer{
+    font-size: 32px;
+    text-align: center;
+    color: rgb(30, 80, 50);
+    transform:
 }
+
+.cont{
+ 
+    color: rgb(238, 230, 209);
+
+
+    
+}
+
 
 @media screen and (max-width: 1016px) {
     header {
         padding: 30px;
+        
+    }
+
+    header nav ul li {
+        font-size: 24px;
+    }
+
+    .aboutme {
+        font-size: small;
+        padding: 5px;
     }
 
     .avatar{
@@ -127,9 +162,20 @@ p {
     .cards {
         width:98%;
     }
+
+    .pdesc {
+        font-size: 12px;
+        line-height: normal;
+        margin: 15px;
+        padding: 5px;
+    }
+
     .cards img {
         max-height: 200px;
         max-width: 200px;
+    }
+    footer {
+        font-size: 14px;
     }
     
 }
